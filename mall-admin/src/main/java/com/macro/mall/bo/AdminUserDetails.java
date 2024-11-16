@@ -42,6 +42,9 @@ public class AdminUserDetails implements UserDetails {
     public String getUsername() {
         return umsAdmin.getUsername();
     }
+    public UmsAdmin getUmsAdmin(){
+        return umsAdmin;
+    }
 
     @Override
     public boolean isAccountNonExpired() {

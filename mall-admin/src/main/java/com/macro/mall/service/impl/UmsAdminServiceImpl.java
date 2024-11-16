@@ -32,6 +32,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Date;
@@ -48,13 +49,13 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     private JwtTokenUtil jwtTokenUtil;
     @Autowired
     private PasswordEncoder passwordEncoder;
-    @Autowired
+    @Resource
     private UmsAdminMapper adminMapper;
-    @Autowired
+    @Resource
     private UmsAdminRoleRelationMapper adminRoleRelationMapper;
-    @Autowired
+    @Resource
     private UmsAdminRoleRelationDao adminRoleRelationDao;
-    @Autowired
+    @Resource
     private UmsAdminLoginLogMapper loginLogMapper;
 
     @Override

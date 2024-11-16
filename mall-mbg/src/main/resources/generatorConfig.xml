@@ -42,7 +42,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.mapper"
                              targetProject="mall-mbg\src\main\java"/>
         <!-- 配置需要生成的表，生成全部表tableName设为% -->
-        <table tableName="%">
+        <table tableName="ums_admin">
             <!-- 用来指定主键生成策略 -->
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>

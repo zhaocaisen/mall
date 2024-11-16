@@ -32,7 +32,18 @@ public class UmsAdmin implements Serializable {
     @ApiModelProperty(value = "帐号启用状态：0->禁用；1->启用")
     private Integer status;
 
+    @ApiModelProperty(value = "所属租户，企业id")
+    private Long tenant;
+    private String name;
     private static final long serialVersionUID = 1L;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
@@ -114,6 +125,14 @@ public class UmsAdmin implements Serializable {
         this.status = status;
     }
 
+    public Long getTenant() {
+        return tenant;
+    }
+
+    public void setTenant(Long tenant) {
+        this.tenant = tenant;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -130,6 +149,7 @@ public class UmsAdmin implements Serializable {
         sb.append(", createTime=").append(createTime);
         sb.append(", loginTime=").append(loginTime);
         sb.append(", status=").append(status);
+        sb.append(", tenant=").append(tenant);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

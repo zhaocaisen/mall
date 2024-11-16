@@ -764,6 +764,66 @@ public class UmsAdminExample {
             addCriterion("status not between", value1, value2, "status");
             return (Criteria) this;
         }
+
+        public Criteria andTenantIsNull() {
+            addCriterion("tenant is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantIsNotNull() {
+            addCriterion("tenant is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantEqualTo(Long value) {
+            addCriterion("tenant =", value, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantNotEqualTo(Long value) {
+            addCriterion("tenant <>", value, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantGreaterThan(Long value) {
+            addCriterion("tenant >", value, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantGreaterThanOrEqualTo(Long value) {
+            addCriterion("tenant >=", value, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantLessThan(Long value) {
+            addCriterion("tenant <", value, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantLessThanOrEqualTo(Long value) {
+            addCriterion("tenant <=", value, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantIn(List<Long> values) {
+            addCriterion("tenant in", values, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantNotIn(List<Long> values) {
+            addCriterion("tenant not in", values, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantBetween(Long value1, Long value2) {
+            addCriterion("tenant between", value1, value2, "tenant");
+            return (Criteria) this;
+        }
+
+        public Criteria andTenantNotBetween(Long value1, Long value2) {
+            addCriterion("tenant not between", value1, value2, "tenant");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {
